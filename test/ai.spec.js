@@ -41,6 +41,7 @@ beforeEach(() => {
     GROQ_TOKEN,
     RSS_TOKEN,
     GROQ_API_KEY: 'dummy-groq-key',
+    MUSE_EMAIL: 'claude@example.com',
     SPREADSHEET_ID: 'dummy-sheet-id',
   };
   sheets = {};

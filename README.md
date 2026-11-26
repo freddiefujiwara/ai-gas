@@ -5,7 +5,8 @@ windows, merged from the former muse-gas and groq-gas.
 
 - **Muse window** — an HTTP bridge to Muse over email. Callers
   POST a request; this project sends it as an email from the owner's
-  account to Muse's own mailbox (freddiefujiwara@muse.ai), collects
+  account to Muse's own mailbox (the address is managed in the
+  `MUSE_EMAIL` script property, never in code), collects
   Muse's email reply, and serves it back over HTTP. Conversations
   can continue in the same mail thread.
 - **Groq window** — a prompt proxy answering with the owner's Groq
@@ -64,8 +65,8 @@ at 20,000 characters.
 Run `setup()` once from the editor: it generates `API_TOKEN` and
 `RSS_TOKEN` and creates the spreadsheet (unless `SPREADSHEET_ID` is
 already set). Set the remaining properties by hand: `ALLOWED_EMAIL`,
-`GOOGLE_CLIENT_ID`, `GROQ_TOKEN`, `GROQ_API_KEY`, and optionally
-`GROQ_MODEL` and `MUSE_EMAIL`.
+`GOOGLE_CLIENT_ID`, `GROQ_TOKEN`, `GROQ_API_KEY`, and `MUSE_EMAIL`
+(Muse's mailbox address, required), and optionally `GROQ_MODEL`.
 
 ## Development
 
