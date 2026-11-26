@@ -63,7 +63,7 @@ GOOGLE_CLIENT_ID / MUSE_EMAIL
 ## 件名タグと Gmail フィルタ
 
 - 件名タグは `[ai-gas:<id>]` に変更する
-- Gmail フィルタ（from freddiefujiwara@muse.ai ＋件名 [muse-gas:）に
+- Gmail フィルタ（from Muse のメールボックス（アドレスはスクリプトプロパティ MUSE_EMAIL で管理）＋件名 [muse-gas:）に
   `[ai-gas:` 用のフィルタを追加する。ラベルは当面 muse-gas を流用
 
 ## URL 依存

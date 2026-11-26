@@ -3,10 +3,10 @@ import * as Code from '../src/Code.js';
 
 // All fixtures are dummy data. Never copy real mail content,
 // real addresses of the owner, or real request text into tests.
-// The only real value is Muse's own public mailbox address,
-// which the code itself defaults to.
+// Muse's mailbox address is a dummy here too; the code reads
+// the real one from the MUSE_EMAIL script property.
 
-const MUSE = 'freddiefujiwara@muse.ai';
+const MUSE = 'claude@example.com';
 const TOKEN = 'dummy-token';
 
 let props;
@@ -125,7 +125,7 @@ function makeDriveFolder(name, parent = null) {
 }
 
 beforeEach(() => {
-  props = { API_TOKEN: TOKEN, SPREADSHEET_ID: 'dummy-sheet-id' };
+  props = { API_TOKEN: TOKEN, SPREADSHEET_ID: 'dummy-sheet-id', MUSE_EMAIL: MUSE };
   sheets = {};
   threads = [];
   sentMail = [];
